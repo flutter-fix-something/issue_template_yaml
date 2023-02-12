@@ -10,25 +10,29 @@ body:
       placeholder: ex. 2.5.2
     validations:
       required: true
-  - type: dropdown
+  - type: checkboxes
     id: platform
     attributes:
       label: Platform
       description: Platform
       options:
-        - Android
-        - iOS
-        - macOS
-        - Web
-        - Windows
-        - Linux
-    validations:
-      required: true
+        - label: Android
+          required: false
+        - label: iOS
+          required: false
+        - label: macOS
+          required: false
+        - label: Web
+          required: false
+        - label: Windows
+          required: false
+        - label: Linux
+          required: false
   - type: input
     id: device-model
     attributes:
       label: Device Model
-      description: 'Device Model (ex. iPhone 12(iOS 14), Galaxy S21(Android 11))'
+      description: "Device Model (ex. iPhone 12(iOS 14), Galaxy S21(Android 11))"
       placeholder: ex. iPhone 12 (iOS 14)
     validations:
       required: true
