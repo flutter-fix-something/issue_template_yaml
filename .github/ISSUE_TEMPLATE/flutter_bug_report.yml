@@ -1,6 +1,6 @@
 name: Bug report
 description: bug report
-title: "[Bug]"
+title: "[Bug report] "
 body:
   - type: input
     id: version
@@ -10,12 +10,26 @@ body:
       placeholder: ex. 2.5.2
     validations:
       required: true
-  - type: input
-    id: device
+  - type: dropdown
+    id: platform
     attributes:
-      label: Device
-      description: Device
-      placeholder: ex. iPhone 12(iOS 14), Galaxy S21(Android 11)
+      label: Platform
+      description: Platform
+      options:
+        - Android
+        - iOS
+        - macOS
+        - Web
+        - Windows
+        - Linux
+    validations:
+      required: true
+  - type: input
+    id: device-model
+    attributes:
+      label: Device Model
+      description: 'Device Model (ex. iPhone 12(iOS 14), Galaxy S21(Android 11))'
+      placeholder: ex. iPhone 12 (iOS 14)
     validations:
       required: true
   - type: textarea
