@@ -10,26 +10,22 @@ body:
         If you can, search the issue list
         or [StackOverflow](https://stackoverflow.com/questions/tagged/flutter) 
         to see if someone has asked the same question.
-  - type: checkboxes
-    id: platform
+  - type: dropdown
+    id: platforms
     attributes:
-      label: Platform
-      description: The platform you want to add the feature to (check all that apply)
+      label: Platforms
+      description: Check all that apply
+      multiple: true
       options:
-        - label: dart
-          required: false
-        - label: Android
-          required: false
-        - label: iOS
-          required: false
-        - label: macOS
-          required: false
-        - label: Web
-          required: false
-        - label: Windows
-          required: false
-        - label: Linux
-          required: false
+        - dart
+        - Android
+        - iOS
+        - macOS
+        - Web
+        - Windows
+        - Linux
+    validations:
+      required: true
   - type: textarea
     id: description
     attributes:

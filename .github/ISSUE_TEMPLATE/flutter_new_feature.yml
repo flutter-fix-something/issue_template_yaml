@@ -9,26 +9,22 @@ body:
         Before submitting, make sure you read the document and search the issue list.
         If you are not sure, you can run the example code 
         first to understand the example that may be your requirement.
-  - type: checkboxes
-    id: platform
+  - type: dropdown
+    id: platforms
     attributes:
-      label: Platform
-      description: The platform you want to add the feature to (check all that apply)
+      label: Platforms
+      description: Check all that apply
+      multiple: true
       options:
-        - label: dart
-          required: false
-        - label: Android
-          required: false
-        - label: iOS
-          required: false
-        - label: macOS
-          required: false
-        - label: Web
-          required: false
-        - label: Windows
-          required: false
-        - label: Linux
-          required: false
+        - dart
+        - Android
+        - iOS
+        - macOS
+        - Web
+        - Windows
+        - Linux
+    validations:
+      required: true
   - type: textarea
     id: description
     attributes:

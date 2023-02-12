@@ -10,24 +10,22 @@ body:
       placeholder: ex. 2.5.2
     validations:
       required: true
-  - type: checkboxes
-    id: platform
+  - type: dropdown
+    id: platforms
     attributes:
-      label: Platform
-      description: Platform
+      label: Platforms
+      description: Check all that apply
+      multiple: true
       options:
-        - label: Android
-          required: false
-        - label: iOS
-          required: false
-        - label: macOS
-          required: false
-        - label: Web
-          required: false
-        - label: Windows
-          required: false
-        - label: Linux
-          required: false
+        - dart
+        - Android
+        - iOS
+        - macOS
+        - Web
+        - Windows
+        - Linux
+    validations:
+      required: true
   - type: input
     id: device-model
     attributes:
