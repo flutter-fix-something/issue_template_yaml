@@ -1,0 +1,15 @@
+name: Example 
+description: Example description
+body:
+  - type: dropdown
+    id: example
+    attributes:
+      label: Example
+      description: Example description
+      multiple: true
+      options:
+        - Example option 1
+        - Example option 2
+        - Example option 3
+    validations:
+      required: true
