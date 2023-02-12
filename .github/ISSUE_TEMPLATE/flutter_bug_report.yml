@@ -1,12 +1,12 @@
 name: Bug report
 description: bug report
-title: "[Bug]: "
+title: "[Bug]"
 body:
   - type: input
     id: version
     attributes:
       label: Version
-      description: Version of the software
+      description: Version of the plugin
       placeholder: ex. 2.5.2
     validations:
       required: true
@@ -15,16 +15,24 @@ body:
     attributes:
       label: Device
       description: Device
-      placeholder: ex. iPhone 12, Galaxy S21
+      placeholder: ex. iPhone 12(iOS 14), Galaxy S21(Android 11)
     validations:
       required: true
   - type: textarea
     id: flutter-doctor
     attributes:
-      label: Logs
-      description: "flutter doctor -v"
+      label: flutter info
+      description: "flutter doctor -v in your terminal"
       placeholder: ex. flutter doctor -v
       render: sh
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: "How to reproduce?"
+      description: "How to reproduce the problem?"
+      placeholder: "ex. I found a bug when I call the PhotoManager.getAssetPathList method."
     validations:
       required: true
   - type: textarea
@@ -36,31 +44,19 @@ body:
       render: sh
     validations:
       required: false
-  - type: markdown
-    attributes:
-      value: |
-        "Input your problem description here. How to reproduce the problem?"
-  - type: textarea
-    id: what-happened
-    attributes:
-      label: 'How to reproduce?'
-      description: 'How to reproduce the problem?'
-      placeholder: ex. I found a bug when I ...
-    validations:
-      required: true
   - type: textarea
     id: example-code
     attributes:
-      label: 'Example code (optional)'
-      description: 'If you can, please provide a minimal example to reproduce the problem.'
-      placeholder: ex. ```dart
+      label: "Example code (optional)"
+      description: "If you can, please provide a minimal example to reproduce the problem."
+      placeholder: "ex.  PhotoManager.editor.saveImageWithId(id, quality: 100)"
       render: Dart
     validations:
       required: false
   - type: input
     id: contact
     attributes:
-      label: Contact Details
+      label: Contact
       description: Your contace (no requird)
       placeholder: ex. email@example.com / twitter / github
     validations:
