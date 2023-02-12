@@ -1,0 +1,67 @@
+name: Bug report
+description: bug report
+title: "[Bug]: "
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: Version of the software
+      placeholder: ex. 2.5.2
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Device
+      description: Device
+      placeholder: ex. iPhone 12, Galaxy S21
+    validations:
+      required: true
+  - type: textarea
+    id: flutter-doctor
+    attributes:
+      label: Logs
+      description: "flutter doctor -v"
+      placeholder: ex. flutter doctor -v
+      render: sh
+    validations:
+      required: true
+  - type: textarea
+    id: log
+    attributes:
+      label: Logs
+      description: "Error log"
+      placeholder: ex. flutter run --verbose
+      render: sh
+    validations:
+      required: false
+  - type: markdown
+    attributes:
+      value: |
+        "Input your problem description here. How to reproduce the problem?"
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: 'How to reproduce?'
+      description: 'How to reproduce the problem?'
+      placeholder: ex. I found a bug when I ...
+    validations:
+      required: true
+  - type: textarea
+    id: example-code
+    attributes:
+      label: 'Example code (optional)'
+      description: 'If you can, please provide a minimal example to reproduce the problem.'
+      placeholder: ex. ```dart
+      render: Dart
+    validations:
+      required: false
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: Your contace (no requird)
+      placeholder: ex. email@example.com / twitter / github
+    validations:
+      required: false
