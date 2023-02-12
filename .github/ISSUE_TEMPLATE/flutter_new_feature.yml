@@ -1,0 +1,49 @@
+name: "Flutter new feature request"
+description: "Request a new feature for the Flutter plugin"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this feature request!
+  - type: checkboxes
+    id: platform
+    attributes:
+      label: Platform
+      description: The platform you want to add the feature to (check all that apply)
+      options:
+        - label: dart
+          required: false
+        - label: Android
+          required: false
+        - label: iOS
+          required: false
+        - label: macOS
+          required: false
+        - label: Web
+          required: false
+        - label: Windows
+          required: false
+        - label: Linux
+          required: false
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: "Describe the feature you want to be added"
+      placeholder: "ex. I want to add a new method to get the thumbnail of the asset."
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why
+      description: "Why do you want this feature to be added? What's the use case?"
+      placeholder: ｜
+        'ex. I want to get the thumbnail of the asset to display it in the list.'
+    validations:
+      required: false
+  - type: markdown
+    attributes:
+      value: |
+        "Adding more detailed explanations or reasons
+        will help you improve the probability of developing new features."
