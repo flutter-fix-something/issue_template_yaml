@@ -38,8 +38,7 @@ body:
     attributes:
       label: Why
       description: "Why do you want this feature to be added? What's the use case?"
-      placeholder: ｜
-        ex. I want to get the thumbnail of the asset to display it in the list.
+      placeholder: "Thumbnails are very important for picture display and must be available. [some design images]"
     validations:
       required: false
   - type: markdown
