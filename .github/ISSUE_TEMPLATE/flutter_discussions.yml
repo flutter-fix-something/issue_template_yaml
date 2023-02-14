@@ -9,3 +9,8 @@ body:
         If so, it is recommended to use Discussions to create discussions.
         The discussions is here:
         [Discussions](https://github.com/FlutterCandies/flutter_photo_manager/discussions)
+  - type: textarea
+    id: content
+    attributes:
+      label: Content
+      description: No, I don't like to say this in the discussion area.
