@@ -1,6 +1,9 @@
 name: How to use
 description: How to use the Flutter plugin
 title: "[How to use] "
+labels:
+  - "Type: How to use"
+  - "Status: No response"
 body:
   - type: markdown
     attributes:

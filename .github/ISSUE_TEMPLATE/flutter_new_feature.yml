@@ -1,6 +1,9 @@
 name: "Flutter new feature request"
 description: "Request a new feature for the Flutter plugin"
 title: "[Feature request] "
+labels:
+  - "Type: Feature request"
+  - "Status: Unconfirmed"
 body:
   - type: markdown
     attributes:

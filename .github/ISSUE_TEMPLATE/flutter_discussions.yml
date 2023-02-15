@@ -1,6 +1,11 @@
 name: Discussions
 description: Discussions
 title: "[Discussions] "
+labels:
+  - "Type: Discussions"
+  - "Status: Unconfirmed"
+assignees:
+  - zmtzawqlp
 body:
   - type: markdown
     attributes:
@@ -8,7 +13,7 @@ body:
         First check whether the project has Discussions enabled.
         If so, it is recommended to use Discussions to create discussions.
         The discussions is here:
-        [Discussions](https://github.com/FlutterCandies/flutter_photo_manager/discussions)
+        [Discussions](https://github.com/FlutterCandies/[repo]/discussions)
   - type: textarea
     id: content
     attributes:
